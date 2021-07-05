@@ -40,7 +40,7 @@ To switch the relays, two commands are available
 - `off#` **switch-off**: where `# `is a relay index (1 to 8 as there are 8 relays)
 - `read` **current relay's state**: requests the state of all relays. The response to this command has the format `relay########`, where the `########` is a binary bit mask representing the status of each relay (example `relay00000100`)
 - `all########` **set all relays**: sets the state of all relays, `########` is 8 digits containing 0's and 1's, it also executes a `read` command
-- `input` **current input's state ** requests the state of all inputs connected to the board. The response to this command has the format `input########`, where the `#` is a binary bit mask representing the status of each relay (example `input00000100`)
+- `input` **current input's state** requests the state of all inputs connected to the board. The response to this command has the format `input########`, where the `#` is a binary bit mask representing the status of each relay (example `input00000100`)
 
 examples
  - sent `on2:12` -> relay number 2 switch-on and after 12 seconds switch-off
